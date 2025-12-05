@@ -20,7 +20,7 @@ function getHumanChoice() {
     return userChoice;
 }
 
-function playGame () {  
+function playGame (rounds = 5) {  
     let humanScore = 0;
     let computerScore = 0;
 
