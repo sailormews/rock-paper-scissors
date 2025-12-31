@@ -1,6 +1,7 @@
 console.log("Hello, World!")
 
 function playGame() { 
+    
 function getComputerChoice() {
     const randomNum = Math.floor(Math.random() * 3);
     switch (randomNum) {
@@ -67,9 +68,11 @@ function playRound (humanChoice, computerChoice) {
     }
 }
 
+for (let i = 0; i < 5; i++) {
 const humanSelection = getHumanChoice(); 
 const computerSelection = getComputerChoice();
+playRound(humanSelection,computerSelection); 
 
 }
-
+} 
 playGame();
